@@ -47,4 +47,4 @@ function nonRepeating(str) {
     return null; // If no non-repeating character found
 }
 
-console.log(nonRepeating('aabbcddbe'))
+console.log(nonRepeating('aabbcddbe'));
