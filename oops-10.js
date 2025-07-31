@@ -28,7 +28,7 @@ console.log(Animal.prototype.__proto__ === Object.prototype);
 // Add another method stop() later only to the prototype, and verify it’s available on both cars
 
 function Car(brand){
-    this.brand = brand;
+    this.brand = brand;oo
 }
 
 Car.prototype.drive = function () {
