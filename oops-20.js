@@ -131,7 +131,7 @@ console.log("=== User Roles ===");
 const admin1 = new Admin("Om", "om@fitgoals.com");
 const customer1 = new Customer("Ravi", "ravi@gmail.com");
 admin1.getInfo();
-admin1.action();
+admin1.action();   
 customer1.getInfo();
 customer1.action();
 admin1.deleteUser(customer1);
