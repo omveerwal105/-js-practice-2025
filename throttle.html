@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Throttle Scroll Example</title>
+</head>
+<body style="height: 2000px">
+    <script>
+        function throttle(fn, limit) {
+            let inThrottle = false;
+            return function (...args) {
+                if (!inThrottle) {
+                    fn.apply(this, args);
+                    inThrottle = true;
+                    setTimeout(() => {
+                        inThrottle = false;
+                    }, limit);
+                }
+            };
+        }
+
+        const logScroll = throttle(() => {
+            console.log("Scrolled:", Date.now());
+        }, 1000);
+
+        window.addEventListener("scroll", logScroll);
+    </script>
+</body>
+</html>
