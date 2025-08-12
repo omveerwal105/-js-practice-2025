@@ -129,4 +129,3 @@ const debouncedLog = debounce(log, 1000);
 debouncedLog(); 
 debouncedLog(); // Only logs once after 1 second
 
-
